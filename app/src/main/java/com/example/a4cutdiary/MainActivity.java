@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationBarView;
+import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -16,11 +17,14 @@ public class MainActivity extends AppCompatActivity {
     MapFragment MFragment;
     AlbumFragment AFragment;
 
+    private MaterialCalendarView calendarView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        calendarView = findViewById(R.id.calendarView);
         HFragment = new HomeFragment();
         MFragment = new MapFragment();
         AFragment = new AlbumFragment();
