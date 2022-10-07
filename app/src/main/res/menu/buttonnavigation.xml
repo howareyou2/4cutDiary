@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/mapButton"
-        android:icon="@drawable/mapIcon"
+        android:icon="@drawable/ic_map"
         android:title="@string/map" />
 
     <item
         android:id="@+id/homeButton"
         android:title="@string/home"
-        android:icon="@drawable/homeicon" />
+        android:icon="@drawable/ic_home" />
 
     <item
         android:id="@+id/albumButton"
-        android:icon="@drawable/albumIcon"
+        android:icon="@drawable/ic_album"
         android:title="@string/album" />
 
 
