@@ -12,24 +12,13 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/NavigationView_tabs" >
-
-        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
-            android:id="@+id/calendarView"
+        <FrameLayout
+            android:id="@+id/container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:mcv_selectionColor="#00F"
-            app:mcv_showOtherDates="all" />
-    </FrameLayout>
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+    </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/NavigationView_tabs"
@@ -38,11 +27,10 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/buttonnavigation" >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"></LinearLayout>
 
 </RelativeLayout>
